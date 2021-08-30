@@ -30,6 +30,7 @@ public class Crab extends Actor
         if (Greenfoot.isKeyDown("right"))
         {
             setLocation(getX()+4,getY());
+            Greenfoot.playSound("krabs.wav");
         }
         
         if (Greenfoot.isKeyDown("left"))
@@ -43,7 +44,9 @@ public class Crab extends Actor
         }
         
         if(Greenfoot.isKeyDown("down"))
-        
+        {
+            setLocation(getX(),getY()+4);
+        }
     }
     // Checks for collisions with other objects
     private void onCollision()
