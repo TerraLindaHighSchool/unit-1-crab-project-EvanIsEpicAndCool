@@ -44,8 +44,9 @@ public class Crab extends Actor
         
         if(Greenfoot.isKeyDown("down"))
         {
-            setLocation(getX(),getY()+4);
+            setLocation(getX(), getY()+4));
         }
+        
     }
     // Checks for collisions with other objects
     private void onCollision()
