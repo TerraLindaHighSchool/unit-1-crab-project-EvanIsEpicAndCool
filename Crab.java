@@ -30,7 +30,6 @@ public class Crab extends Actor
         if (Greenfoot.isKeyDown("right"))
         {
             setLocation(getX()+4,getY());
-            Greenfoot.playSound("krabs.wav");
         }
         
         if (Greenfoot.isKeyDown("left"))
