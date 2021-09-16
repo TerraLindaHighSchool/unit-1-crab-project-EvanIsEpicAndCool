@@ -7,23 +7,17 @@ import greenfoot.*;
     */
 public class Crab extends Actor
 {
+    public static GreenfootSound music = new GreenfootSound("Jazz.wav");
     // This method repeats the following actions
     public void act()
     {
-        turnAtEdge();
         checkKeyPress();
         onCollision();
+        music.play();
     }
     // Moves the Crab
     
     // Turns the Crab at the edge
-    private void turnAtEdge()
-    {
-        if(isAtEdge())
-        {
-            turn(50);
-        }
-    }
     // Checks for user key presses so user can turn the Crab
     private void checkKeyPress()
     {
@@ -54,7 +48,7 @@ public class Crab extends Actor
         if(isTouching(worm.class))
         {
             removeTouching(worm.class);
-            Greenfoot.playSound("slurp.wav");
+            Greenfoot.playSound("mlem.wav");
             
             //winning the game
             if(getWorld().getObjects(worm.class).size() == 0)
@@ -62,6 +56,7 @@ public class Crab extends Actor
                 Greenfoot.setWorld(new WinSplash());
                 Greenfoot.playSound("fanfare.wav");
                 Greenfoot.stop();
+                music.stop();
             }
         }
         
@@ -69,6 +64,7 @@ public class Crab extends Actor
         {
             Greenfoot.playSound("au.wav");
             Greenfoot.stop();
+            music.stop();
         }
     }
 

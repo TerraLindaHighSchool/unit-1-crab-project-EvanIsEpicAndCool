@@ -1,5 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.math.*;
 /**
  * Write a description of class worm here.
  * 
@@ -14,6 +14,15 @@ public class worm extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        randMove();
+    }
+    
+    public void randMove()
+    {
+        move(5);
+        if (Greenfoot.getRandomNumber(100) <10)
+        {
+            turn(Greenfoot.getRandomNumber(100));
+        }
     }
 }

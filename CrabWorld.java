@@ -8,7 +8,7 @@ public class CrabWorld extends World
      */
     public CrabWorld() 
     {
-        super(560, 560, 1);
+        super(720, 360, 1);
         prepare();
     }
     
@@ -18,34 +18,40 @@ public class CrabWorld extends World
      */
     private void prepare()
     {
-        Lobster lobster = new Lobster();
-        addObject(lobster,335,193);
         Crab crab = new Crab();
-        addObject(crab,253,302);
-        worm worm = new worm();
-        addObject(worm,455,107);
-        worm worm2 = new worm();
-        addObject(worm2,167,121);
-        worm worm3 = new worm();
-        addObject(worm3,465,282);
-        worm worm4 = new worm();
-        addObject(worm4,125,234);
-        worm worm5 = new worm();
-        addObject(worm5,281,345);
-        worm worm6 = new worm();
-        addObject(worm6,103,363);
+        addObject(crab,356,256);
+        Lobster lobster = new Lobster();
+        addObject(lobster,135,126);
         Lobster lobster2 = new Lobster();
-        addObject(lobster2,71,107);
+        addObject(lobster2,594,268);
+        worm worm = new worm();
+        addObject(worm,384,99);
+        worm worm2 = new worm();
+        addObject(worm2,606,154);
+        worm worm3 = new worm();
+        addObject(worm3,67,305);
+        worm worm4 = new worm();
+        addObject(worm4,89,42);
+        worm worm5 = new worm();
+        addObject(worm5,638,18);
+        worm worm6 = new worm();
+        addObject(worm6,660,333);
         Lobster lobster3 = new Lobster();
-        addObject(lobster3,312,468);
+        addObject(lobster3,505,48);
         Lobster lobster4 = new Lobster();
-        addObject(lobster4,415,289);
-        Lobster lobster5 = new Lobster();
-        addObject(lobster5,150,330);
-        Lobster lobster6 = new Lobster();
-        addObject(lobster6,104,198);
-        Lobster lobster7 = new Lobster();
-        addObject(lobster7,283,84);
-        removeObject(lobster5);
+        addObject(lobster4,208,332);
+        worm worm7 = new worm();
+        addObject(worm7,662,102);
+        worm worm8 = new worm();
+        addObject(worm8,274,71);
+        worm worm9 = new worm();
+        addObject(worm9,160,174);
+        lobster2.setLocation(613,291);
+        worm worm10 = new worm();
+        addObject(worm10,613,291);
+        worm worm11 = new worm();
+        addObject(worm11,679,186);
+        worm worm12 = new worm();
+        addObject(worm12,200,249);
     }
-}
+    }
